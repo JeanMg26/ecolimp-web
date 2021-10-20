@@ -1,0 +1,22 @@
+/* html {
+  height: 100%;
+} */
+
+#wrap {
+  /* fixed width, centered in viewport */
+  width: 980px;
+  left: -490px;
+  margin-left: 50%;
+  position: relative;
+}
+
+#showcase {
+  width: 100%;
+  min-height: 370px;
+  border-radius: 8px;
+  margin-top: 12px;
+  visibility: hidden;
+}
+#showcase img {
+  cursor: pointer;
+}
