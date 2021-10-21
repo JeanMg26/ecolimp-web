@@ -23,7 +23,10 @@ Table of contents
 
 * {
    font-family: 'Open Sans', sans-serif;
+}
 
+body {
+   overflow-x: hidden !important;
 }
 
 /* Typography */
@@ -385,7 +388,7 @@ footer a.text-light:hover {
    right: 0;
 }
 
-#lista-desinfeccion ul li{
+#lista-desinfeccion ul li {
    font-family: "OpenSans-Italic";
 }
 
@@ -416,7 +419,7 @@ footer a.text-light:hover {
    color: #1EA5D2;
 }
 
-.dropdown-toggle::after{
+.dropdown-toggle::after {
    font-family: 'Font Awesome 5 Pro';
    content: "\f078" !important;
    border: 0px !important;
@@ -426,12 +429,12 @@ footer a.text-light:hover {
    transition-duration: 0.3s
 }
 
-.dropdown-toggle.show::after{
+.dropdown-toggle.show::after {
    transform: rotate(180deg);
    transition-duration: 0.3s
 }
 
-#dropdown-menu-child{
+#dropdown-menu-child {
    background-color: #64B900;
 }
 
@@ -440,7 +443,7 @@ footer a.text-light:hover {
    background-color: #fff !important;
 }
 
-.dropdown-item.active{
+.dropdown-item.active {
    color: #1EA5D2 !important;
    background-color: #fff !important;
 }
@@ -449,24 +452,25 @@ footer a.text-light:hover {
    
 } */
 
-.navbar-light .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .nav-link.active {
    color: #1EA5D2 !important;
 }
 
-.navbar-nav .servicios:focus,{
+.navbar-nav .servicios:focus,
+   {
    color: #fff !important;
 }
 
-.navbar-nav .servicios.active{
+.navbar-nav .servicios.active {
    color: #1EA5D2 !important;
 }
 
 /* Banner Imagenes */
-.banner-container{
+.banner-container {
    position: relative;
 }
 
-.text-banner{
+.text-banner {
    font-family: "Avenir Next";
    font-size: 3.4vw;
    position: absolute;
@@ -475,9 +479,35 @@ footer a.text-light:hover {
    right: 30%;
 }
 
-.cliente:hover{
+.cliente:hover {
    opacity: 0.5;
 }
+
+.menu-footer {
+   border-bottom: 3px #fff solid;
+   padding-top: 0px;
+   display: inline-block;
+   padding-right: 50px;
+   text-decoration: none;
+}
+
+.menu-footer-secondary {
+   border-bottom: 3px #fff solid;
+   padding-top: 0px;
+   display: inline-block;
+   padding-right: 50px;
+}
+
+.menu-footer:hover {
+   color: #1EA5D2 !important;
+   cursor: pointer;
+}
+
+/* .navbar-nav .dropdown-menu {
+   position: static;
+} */
+
+/* **************************** MEDIA QUERYS ************************ */
 
 
 @media (max-width: 576px) {
@@ -497,16 +527,16 @@ footer a.text-light:hover {
       padding: 0px !important;
    }
 
-   #text-desinfecion{
+   #text-desinfecion {
       padding-left: 30px !important;
    }
 
-   #lista-desinfeccion ul li{
+   #lista-desinfeccion ul li {
       font-size: 20px;
       text-align: justify;
    }
 
-   #lista-desinfeccion{
+   #lista-desinfeccion {
       position: relative;
       top: 20px;
    }
@@ -515,6 +545,87 @@ footer a.text-light:hover {
    .iris .font-avenir {
       font-size: 25px;
    }
+}
 
+
+@media (max-width: 768px) {
+   .banner-content .font-avenir {
+      font-size: 45px;
+   }
+
+   .service-tag {
+      position: relative;
+      background-color: #fff;
+   }
+
+   .banner-desinfeccion {
+      position: relative;
+      padding: 0px !important;
+   }
+
+   #text-desinfecion {
+      padding-left: 30px !important;
+   }
+
+   #lista-desinfeccion ul li {
+      font-size: 20px;
+      text-align: justify;
+   }
+
+   #lista-desinfeccion {
+      position: relative;
+      top: 20px;
+   }
+
+}
+
+
+@media (max-width: 992px) {
+
+   .imagen-desinfeccion {
+      width: 100%;
+   }
+
+   .banner-content .font-avenir {
+      font-size: 45px;
+   }
+
+   .service-tag {
+      position: relative;
+      background-color: #fff;
+   }
+
+   .banner-desinfeccion {
+      position: relative;
+      padding: 0px !important;
+   }
+
+   #text-desinfecion {
+      padding-left: 30px !important;
+   }
+
+   #lista-desinfeccion ul li {
+      font-size: 20px;
+      text-align: justify;
+   }
+
+   #lista-desinfeccion {
+      position: relative;
+      top: 20px;
+   }
+
+}
+
+@media (max-width: 1200px) {
+
+   #dropdown-menu-parent {
+      position: static !important;
+   }
+
+   #dropdown-menu-child {
+      position: static !important;
+      text-align: center;
+      background-color: #529900;
+   }
 
 }
