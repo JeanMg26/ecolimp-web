@@ -22,14 +22,14 @@
 
 <body>
    <!-- Header -->
-   <nav id="main_nav" class="navbar navbar-expand-lg navbar-light shadow" style="background-color: #64B900;">
-      <div class="container d-flex justify-content-between align-items-center">
+   <nav id="main_nav" class="navbar navbar-expand-xl navbar-light shadow" style="background-color: #64B900;">
+      <div class="container-fluid container-xxl d-flex justify-content-between align-items-center">
          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
 
-         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
-            <div class="flex-fill mx-xl-5 my-2">
+         <div class="align-self-center collapse navbar-collapse flex-fill d-xl-flex justify-content-xl-between" id="navbar-toggler-success">
+            <div class="flex-fill mx-xl-2 mx-xxl-5 my-2">
                <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                   <li class="nav-item">
                      <a class="nav-link btn-outline-primary rounded-pill px-5 font-open fw-bold" href="index.html">Inicio</a>
@@ -37,9 +37,9 @@
                   <li class="nav-item">
                      <a class="nav-link btn-outline-primary rounded-pill px-5 font-open fw-bold" href="empresa.html">Empresa</a>
                   </li>
-                  <li class="nav-item  position-relative" id="dropdown-menu-parent">
-                     <a class="nav-link servicios btn-outline-primary rounded-pill px-5 font-open fw-bold dropdown-toggle" href="#" id="servicios" data-bs-toggle="dropdown">Servicios</a>
-                     <ul class="dropdown-menu position-absolute py-0" aria-labelledby="servicios" id="dropdown-menu-child">
+                  <li class="nav-item dropdown" id="dropdown-menu-parent">
+                     <a class="nav-link servicios btn-outline-primary rounded-pill px-5 font-open fw-bold dropdown-toggle" href="#" id="servicios" data-bs-toggle="dropdown" aria-expanded="true">Servicios</a>
+                     <ul class="dropdown-menu py-0" aria-labelledby="servicios" id="dropdown-menu-child">
                         <li>
                            <a class="dropdown-item font-open fw-bold text-white active" href="barrido-mecanizado.html">Barrido y Mecanizado</a>
                         </li>

@@ -503,11 +503,10 @@ footer a.text-light:hover {
    cursor: pointer;
 }
 
-/* .navbar-nav .dropdown-menu {
-   position: static;
-} */
 
+/* ****************************************************************** */
 /* **************************** MEDIA QUERYS ************************ */
+/* ****************************************************************** */
 
 
 @media (max-width: 576px) {
@@ -544,6 +543,10 @@ footer a.text-light:hover {
 
    .iris .font-avenir {
       font-size: 25px;
+   }
+
+   #empresa .font-avenir {
+      font-size: 20px;
    }
 }
 
@@ -613,6 +616,11 @@ footer a.text-light:hover {
       position: relative;
       top: 20px;
    }
+
+   #wrap {
+      display: none;
+   }
+
 
 }
 
