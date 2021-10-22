@@ -383,6 +383,10 @@ footer a.text-light:hover {
   font-size: 13.5px;
 }
 
+.font-xl {
+  font-size: 22px;
+}
+
 .font-xs {
   font-size: 10px;
 }
@@ -523,7 +527,9 @@ footer a.text-light:hover {
   cursor: pointer;
 }
 
-.text-banner-barrido {
+.text-banner-barrido,
+.text-banner-secundario,
+.text-banner-sanitizacion {
   top: 50px;
   right: 15%;
   font-size: 50px;
@@ -570,6 +576,10 @@ footer a.text-light:hover {
 
   #empresa .font-avenir {
     font-size: 20px;
+  }
+
+  .lista-soluciones {
+    font-size: 18px;
   }
 }
 
@@ -621,6 +631,14 @@ footer a.text-light:hover {
     top: 40% !important;
     font-size: 40px !important;
   }
+
+  .text-banner-sanitizacion {
+    display: flex !important;
+    justify-content: center !important;
+    right: 5% !important;
+    top: 40% !important;
+    font-size: 30px !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1060px) {
@@ -637,6 +655,14 @@ footer a.text-light:hover {
   }
 
   .text-banner-barrido {
+    display: flex !important;
+    justify-content: center !important;
+    right: 10% !important;
+    top: 40% !important;
+    font-size: 40px !important;
+  }
+
+  .text-banner-sanitizacion {
     display: flex !important;
     justify-content: center !important;
     right: 10% !important;
