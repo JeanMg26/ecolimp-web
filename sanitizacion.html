@@ -134,13 +134,11 @@
 
    <section>
       <div id="wrap">
-         <div id="showcase" class="mx-0">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen1.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen2.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen3.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen4.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen5.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen6.png">
+         <div id="showcase" class="mx-0 sanitizacion">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/sanitizacion/imagen01.JPG">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/sanitizacion/imagen02.JPG">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/sanitizacion/imagen03.JPG">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/sanitizacion/imagen04.png">
          </div>
       </div>
    </section>
@@ -301,9 +299,7 @@
          })
 
          function showcaseUpdated(showcase) {
-            var title = $('#item-title')(
-               $(showcase.nearestItem()).attr('alt')
-            )
+            var title = $('#item-title').html($(showcase.nearestItem()).attr('alt'))
 
             var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
             title.css('opacity', 0.5 + (0.5 * c))

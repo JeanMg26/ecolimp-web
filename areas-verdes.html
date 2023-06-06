@@ -132,11 +132,12 @@
    </section>
 
    <section>
-      <div id="wrap">
-         <div id="showcase" class="mx-0">
-            <img class="cloud9-item" src="assets/img/empresa/gras.png">
-            <img class="cloud9-item" src="assets/img/empresa/arbol.png">
-            <img class="cloud9-item" src="assets/img/empresa/imagen6.png">
+      <div id="wrap" >
+         <div id="showcase" class="mx-0 areas-verdes">
+            <img class="cloud9-item" src="assets/img/empresa/areas-verdes/imagen01.jpg">
+            <img class="cloud9-item" src="assets/img/empresa/areas-verdes/imagen02.jpg">
+            <img class="cloud9-item" src="assets/img/empresa/areas-verdes/imagen03.jpg">
+            <img class="cloud9-item" src="assets/img/empresa/areas-verdes/imagen04.png">
          </div>
       </div>
    </section>
@@ -295,14 +296,12 @@
             onLoaded: function () {
                showcase.css('visibility', 'visible')
                showcase.css('display', 'none')
-               showcase.fadeIn(1500)
+               showcase.fadeIn(2000)
             }
          })
 
          function showcaseUpdated(showcase) {
-            var title = $('#item-title')(
-               $(showcase.nearestItem()).attr('alt')
-            )
+            var title = $('#item-title').html($(showcase.nearestItem()).attr('alt'))
 
             var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
             title.css('opacity', 0.5 + (0.5 * c))

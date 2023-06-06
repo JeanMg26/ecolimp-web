@@ -137,14 +137,17 @@
    </section>
 
    <section>
-      <div id="wrap">
+      <div id="wrap" class="carousel-video">
          <div id="showcase" class="mx-0">
-            <img class="cloud9-item" src="assets/img/empresa/imagen1.png">
-            <img class="cloud9-item" src="assets/img/empresa/imagen2.png">
-            <img class="cloud9-item" src="assets/img/empresa/imagen3.png">
-            <img class="cloud9-item" src="assets/img/empresa/imagen4.png">
-            <img class="cloud9-item" src="assets/img/empresa/imagen5.png">
-            <img class="cloud9-item" src="assets/img/empresa/imagen6.png">
+            <img class="cloud9-item" src="assets/img/empresa/aseo/imagen01.JPG">
+            <img class="cloud9-item" src="assets/img/empresa/aseo/imagen02.JPG">
+            <img class="cloud9-item" src="assets/img/empresa/aseo/imagen03.JPG">
+            <img class="cloud9-item" src="assets/img/empresa/aseo/imagen04.JPG">
+            <img class="cloud9-item" src="assets/img/empresa/aseo/imagen05.JPG">
+            <video class="cloud9-item" width="auto" height="400" controls>
+               <source src="assets/video/aseo/video01.MP4" type="video/mp4">
+               Your browser does not support the video tag.
+             </video>
          </div>
       </div>
    </section>
@@ -290,7 +293,7 @@
          var showcase = $("#showcase")
 
          showcase.Cloud9Carousel({
-            yPos: 42,
+            yPos: 100,
             yRadius: 48,
             mirrorOptions: {
                gap: 12,
@@ -304,14 +307,12 @@
             onLoaded: function () {
                showcase.css('visibility', 'visible')
                showcase.css('display', 'none')
-               showcase.fadeIn(1500)
+               showcase.fadeIn(500)
             }
          })
 
          function showcaseUpdated(showcase) {
-            var title = $('#item-title')(
-               $(showcase.nearestItem()).attr('alt')
-            )
+            var title = $('#item-title').html($(showcase.nearestItem()).attr('alt'))
 
             var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
             title.css('opacity', 0.5 + (0.5 * c))

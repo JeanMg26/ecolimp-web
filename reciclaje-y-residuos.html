@@ -134,14 +134,14 @@
    </section>
 
    <section>
-      <div id="wrap">
-         <div id="showcase" class="mx-0">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen1.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen2.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen3.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen4.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen5.png">
-            <img class="cloud9-item img-fluid" src="assets/img/empresa/imagen6.png">
+      <div id="wrap" class="wrap-reciclaje">
+         <div id="showcase" class="mx-0 reciclaje">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/reciclaje/imagen01.png">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/reciclaje/imagen02.png">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/reciclaje/imagen03.png">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/reciclaje/imagen04.png">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/reciclaje/imagen05.png">
+            <img class="cloud9-item img-fluid" src="assets/img/empresa/reciclaje/imagen06.png">
          </div>
       </div>
    </section>
@@ -285,7 +285,7 @@
          var showcase = $("#showcase")
 
          showcase.Cloud9Carousel({
-            yPos: 42,
+            yPos: 100,
             yRadius: 48,
             mirrorOptions: {
                gap: 12,
@@ -304,9 +304,7 @@
          })
 
          function showcaseUpdated(showcase) {
-            var title = $('#item-title')(
-               $(showcase.nearestItem()).attr('alt')
-            )
+            var title = $('#item-title').html($(showcase.nearestItem()).attr('alt'))
 
             var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
             title.css('opacity', 0.5 + (0.5 * c))
